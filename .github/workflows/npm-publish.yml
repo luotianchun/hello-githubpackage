@@ -6,7 +6,7 @@ name: Node.js Package
 on:
   push:
     paths:
-      - 'build/**'
+      - "api.yml"
   release:
     types: [created]
 
@@ -19,6 +19,7 @@ jobs:
         with:
           node-version: 16
       - run: npm ci
+      - run: npm run build
       - run: npm test
 
   publish-npm:
