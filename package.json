@@ -1,5 +1,5 @@
 {
-  "name": "testgithub",
+  "name": "@luotianchun/testgithub",
   "version": "1.0.0",
   "description": "",
   "main": "build/bundle.cjs.js",
