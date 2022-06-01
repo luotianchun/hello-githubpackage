@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@luotianchun/hello-githubpackage': ^1.0.0
   '@rollup/plugin-commonjs': ^22.0.0
   '@rollup/plugin-node-resolve': ^13.3.0
   '@rollup/plugin-typescript': ^8.3.2
@@ -9,6 +10,9 @@ specifiers:
   tslib: ^2.4.0
   typescript: ^4.7.2
   vitest: ^0.13.0
+
+dependencies:
+  '@luotianchun/hello-githubpackage': 1.0.0
 
 devDependencies:
   '@rollup/plugin-commonjs': 22.0.0_rollup@2.75.4
@@ -79,6 +83,10 @@ packages:
       '@jridgewell/resolve-uri': 3.0.7
       '@jridgewell/sourcemap-codec': 1.4.13
     dev: true
+
+  /@luotianchun/hello-githubpackage/1.0.0:
+    resolution: {integrity: sha512-qjSN1001EX3eONctPPvqTyWGcCRsxoEY8VlUhr6xNBx9hQLwkPKrlrJ8C1dkIYF2OedhArFiocOQeuhmPfW5wQ==, tarball: download/@luotianchun/hello-githubpackage/1.0.0/a517cabe039dce1e19e5acd32ef058f5f28ce2b5d8bc895c6241c92a715321e1}
+    dev: false
 
   /@rollup/plugin-commonjs/22.0.0_rollup@2.75.4:
     resolution: {integrity: sha512-Ktvf2j+bAO+30awhbYoCaXpBcyPmJbaEUYClQns/+6SNCYFURbvBiNbWgHITEsIgDDWCDUclWRKEuf8cwZCFoQ==}
