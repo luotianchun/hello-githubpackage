@@ -25,16 +25,15 @@ jobs:
   push-commit:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - name: Create report file
-        run: date +%s > report.txt
-      - name: Commit report
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+      - name: add package version
         run: |
-          git config --global user.name 'luotianchun'
+          git config --global user.name 'autopush'
           git config --global user.email 'autopush@users.noreply.github.com'
           git remote set-url origin https://x-access-token:${{ secrets.PACKAGE_TOKEN }}@github.com
           npm version patch
-          git commit -am "Automated report"
+          git commit -am "add package version"
           git push
 
   publish-npm:
