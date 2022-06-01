@@ -24,8 +24,5 @@
   },
   "files": [
     "build"
-  ],
-  "dependencies": {
-    "@luotianchun/hello-githubpackage": "^1.0.0"
-  }
+  ]
 }
