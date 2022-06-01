@@ -23,12 +23,14 @@ jobs:
       - run: npm test
 
   push-commit:
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
       - name: add package version
         run: |
+          git push
           git config --global user.name 'autopush'
           git config --global user.email 'autopush@users.noreply.github.com'
           git remote set-url origin https://x-access-token:${{ secrets.PACKAGE_TOKEN }}@github.com
@@ -37,7 +39,7 @@ jobs:
           git push
 
   publish-npm:
-    needs: build
+    needs: push-commit
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
