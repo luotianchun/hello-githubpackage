@@ -1,4 +1,4 @@
 const add = function (a: number, b: number): number {
-    return a+b
-  }
-export default add
+  return a + b;
+};
+export default add;
